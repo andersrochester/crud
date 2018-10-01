@@ -5,10 +5,10 @@ ini_set('display_errors', 1);
 
 class Database
 {
-    private static $dbName ='db1164707_AndersR';
-    private static $dbHost = '83.168.227.23';
-    private static $dbUser = 'u1164707_AndersR';
-    private static $dbPassword = 'n4jR8R}[|F';
+    private static $dbName ='blog';
+    private static $dbHost = 'localhost';
+    private static $dbUser = 'root';
+    private static $dbPassword = 'rootpass';
     
     private static $cont = null;
     
@@ -22,8 +22,8 @@ class Database
         {
             try 
             {
-                //self::$cont = new PDO( "'"."msql:host=".{self::$dbHost}.";"."dbname=".{self::$dbName.}"'", self::$dbUser, self::$dbPassword);
-                self::$cont = new PDO('mysql:host=83.168.227.23; dbname=db1164707_AndersR', 'u1164707_AndersR', 'n4jR8R}[|F');
+                self::$cont = new PDO( "'"."msql:host=".{self::$dbHost}.";"."dbname=".{self::$dbName.}"'", self::$dbUser, self::$dbPassword);
+                //self::$cont = new PDO('mysql:host=83.168.227.23; dbname=db1164707_AndersR', 'u1164707_AndersR', 'n4jR8R}[|F');
                 //self::$cont->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 //self::$cont->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
                 //self::$cont->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);

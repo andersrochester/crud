@@ -14,7 +14,7 @@ ini_set('log_errors', 1);
 try {
     
     //$pdo = new PDO('mysql:host=localhost; dbname=db1164707_AndersR', 'root', 'root');
-    $conn = new PDO('mysql:host=83.168.227.23; dbname=db1164707_AndersR', 'u1164707_AndersR', 'n4jR8R}[|F');
+    $conn = new PDO('mysql:host=xx.xx.xx.xxx; dbname=db1', 'u1', 'password');
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
     $conn->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
